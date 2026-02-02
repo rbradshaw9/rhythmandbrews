@@ -60,13 +60,10 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Send email using Resend
-    // Using delivered@resend.dev for testing until ryan@rhythmandbrewspr.com is verified in Resend dashboard
-    const recipientEmail = process.env.VERIFIED_EMAIL || 'delivered@resend.dev'
-    
+    // Send email using Resend with verified domain
     const { data, error } = await resend.emails.send({
-      from: 'Rhythm & Brews <onboarding@resend.dev>',
-      to: [recipientEmail],
+      from: 'Rhythm & Brews <contact@rhythmandbrewspr.com>',
+      to: ['ryan@rhythmandbrewspr.com'],
       replyTo: email, // Sender's email for reply
       subject: `New Contact Form Message from ${name}`,
       html: `

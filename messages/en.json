@@ -1,44 +1,50 @@
 {
   "hero": {
     "title": "Rhythm & Brews",
-    "subtitle": "Where Music Meets Community",
-    "description": "Join us every week for an intimate evening of live performances, great coffee, and unforgettable moments.",
-    "ctaPrimary": "Get in Touch",
-    "ctaSecondary": "Learn More"
+    "subtitle": "A fun, exciting, high-quality community open mic night — all about live music.",
+    "meta": "Live music • Community • All ages welcome • Aguadilla, Puerto Rico",
+    "nextEventLabel": "Next Event",
+    "nextEventDate": "Saturday, February 21",
+    "eventDetails": "Doors at 6:00pm • Performer sign-up at 5:30pm"
   },
-  "infoGrid": {
-    "heading": "What to Expect",
-    "subheading": "Rhythm & Brews is more than just an open mic—it's a gathering of artists, music lovers, and friends.",
-    "cards": {
-      "schedule": {
-        "title": "Every Thursday",
-        "description": "Join us weekly for an evening of incredible performances and community vibes."
-      },
-      "openToAll": {
-        "title": "Open to All",
-        "description": "Whether you're a seasoned performer or trying the stage for the first time, everyone is welcome."
-      },
-      "atmosphere": {
-        "title": "Cozy Atmosphere",
-        "description": "Intimate venue with warm lighting, comfortable seating, and exceptional acoustics."
-      },
-      "refreshments": {
-        "title": "Coffee & Refreshments",
-        "description": "Enjoy artisan coffee, craft beverages, and light bites throughout the evening."
-      }
-    }
+  "intro": {
+    "paragraph1": "Rhythm & Brews is a community-driven open mic night focused entirely on live music.",
+    "paragraph2": "Whether you're stepping on stage for the first time or you've been performing for years, this is a place to play, connect, and have a great time.",
+    "paragraph3": "Come to perform, come to listen, or just come to support local musicians — the energy is always better with a full room."
   },
-  "collageSection": {
-    "heading": "Moments from Our Nights",
-    "subheading": "A glimpse into the magic that happens when music and community come together."
+  "signup": {
+    "title": "Performer Sign-Up",
+    "paragraph1": "Sign-up happens in person only and is first come, first served.",
+    "paragraph2": "Slots are limited, so arrive early if you want to play.",
+    "details": [
+      "Sign-up opens at 5:30pm",
+      "15-minute max per performer",
+      "Covers and originals welcome",
+      "Beginner-friendly and experienced musicians encouraged"
+    ],
+    "note": "This is a family-friendly community event. We're here to support each other, have fun, and create a positive space for live music."
   },
-  "instagramGallery": {
-    "heading": "Follow the Journey",
-    "subheading": "Stay connected and see highlights from our weekly open mic nights."
+  "location": {
+    "title": "When & Where",
+    "paragraph1": "Rhythm & Brews is hosted at The Beer Box in Aguadilla, with great drinks and a welcoming atmosphere.",
+    "paragraph2": "Events are held occasionally, so dates may change. Follow us on Instagram for the latest updates.",
+    "mapLinkText": "Get directions on Google Maps"
   },
-  "contactForm": {
-    "heading": "Get in Touch",
-    "subheading": "Have questions? Want to perform? We'd love to hear from you.",
+  "partners": {
+    "title": "Hosted With",
+    "items": [
+      "The Beer Box",
+      "Box Lab Brewing"
+    ]
+  },
+  "instagram": {
+    "title": "From the Night",
+    "paragraph": "Moments from past Rhythm & Brews nights — live music, good energy, and a supportive crowd.",
+    "followText": "Follow @rhythmandbrewsaguadilla for updates, announcements, and photos."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "paragraph": "Have a question, want to get involved, or just want more info? Send us a message — we'd love to hear from you.",
     "nameLabel": "Name",
     "namePlaceholder": "Your name",
     "nameRequired": "Name is required",
@@ -58,13 +64,7 @@
     "errorMessage": "Please try again or email us directly at ryan@rhythmandbrewspr.com"
   },
   "footer": {
-    "tagline": "Where music meets community. Join us every Thursday for an unforgettable open mic experience.",
-    "quickLinks": "Quick Links",
-    "aboutUs": "About Us",
-    "contact": "Contact",
-    "instagram": "Instagram",
-    "getInTouch": "Get in Touch",
-    "everyThursday": "Every Thursday",
-    "copyright": "Rhythm & Brews. All rights reserved."
+    "text": "Rhythm & Brews — A community open mic night for live music in Aguadilla, PR",
+    "instagram": "Follow us on Instagram"
   }
 }

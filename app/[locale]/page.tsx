@@ -1,16 +1,20 @@
 import Hero from '@/components/Hero'
-import InfoGrid from '@/components/InfoGrid'
-import CollageSection from '@/components/CollageSection'
+import IntroSection from '@/components/IntroSection'
+import SignUpSection from '@/components/SignUpSection'
+import LocationSection from '@/components/LocationSection'
+import PartnersSection from '@/components/PartnersSection'
 import InstagramGallery from '@/components/InstagramGallery'
 import ContactForm from '@/components/ContactForm'
 import Footer from '@/components/Footer'
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-background text-white">
       <Hero />
-      <InfoGrid />
-      <CollageSection />
+      <IntroSection />
+      <SignUpSection />
+      <LocationSection />
+      <PartnersSection />
       <InstagramGallery />
       <ContactForm />
       <Footer />

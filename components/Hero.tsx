@@ -8,10 +8,10 @@ export default function Hero() {
   const t = useTranslations('hero')
   
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background z-10" />
         <Image
           src="/images/hero/openmic-background-1.jpg"
           alt="Rhythm & Brews Open Mic"
@@ -27,22 +27,36 @@ export default function Hero() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-20 section-container text-center animate-fade-in">
+      <div className="relative z-20 section-container text-center animate-fade-in py-20">
         <h1 className="heading-xl mb-6 tracking-tight">
           {t('title')}
         </h1>
-        <p className="text-xl sm:text-2xl text-text-muted mb-4 max-w-2xl mx-auto">
+        <p className="text-xl sm:text-2xl text-text mb-6 max-w-3xl mx-auto leading-relaxed">
           {t('subtitle')}
         </p>
-        <p className="text-lg text-text-muted mb-10 max-w-xl mx-auto">
-          {t('description')}
+        <p className="text-lg text-text-muted mb-12 max-w-2xl mx-auto">
+          {t('meta')}
         </p>
+        
+        {/* Next Event Info */}
+        <div className="inline-block bg-background-light/80 backdrop-blur-sm border-2 border-primary/30 rounded-lg px-8 py-6 mb-10">
+          <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">
+            {t('nextEventLabel')}
+          </p>
+          <p className="text-2xl font-serif font-bold text-text mb-2">
+            {t('nextEventDate')}
+          </p>
+          <p className="text-text-muted">
+            {t('eventDetails')}
+          </p>
+        </div>
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="#contact" className="btn-primary">
-            {t('ctaPrimary')}
+            {t.rich('contact.title', { fallback: 'Get in Touch' })}
           </a>
-          <a href="#info" className="btn-secondary">
-            {t('ctaSecondary')}
+          <a href="#signup" className="btn-secondary">
+            {t.rich('signup.title', { fallback: 'Performer Sign-Up' })}
           </a>
         </div>
       </div>

@@ -13,11 +13,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <img 
-              src="/images/brand/rhythm-and-brews-logo.svg" 
-              alt="Rhythm & Brews" 
-              className="h-12 mb-3"
-            />
+            <div className="relative h-12 w-48 mb-3">
+              <Image 
+                src="/images/brand/rhythm-and-brews-logo.svg" 
+                alt="Rhythm & Brews logo" 
+                fill
+                className="object-contain object-left"
+              />
+            </div>
             <p className="text-text-muted">
               {t('text')}
             </p>

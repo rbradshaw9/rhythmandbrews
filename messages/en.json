@@ -5,7 +5,9 @@
     "meta": "Live music only • Musicians welcome • All ages • Aguadilla, Puerto Rico",
     "nextEventLabel": "Next Event",
     "nextEventDate": "Saturday, February 21",
-    "eventDetails": "Doors at 6:00pm • Performer sign-up at 5:30pm"
+    "eventDetails": "Doors at 6:00pm • Performer sign-up at 5:30pm",
+    "noEventScheduled": "Next event coming soon",
+    "followForUpdates": "Follow us on Instagram for the latest updates"
   },
   "intro": {
     "paragraph1": "Rhythm & Brews is a community-driven open mic night dedicated exclusively to live music performances — singers, instrumentalists, bands, and solo acts are all welcome.",
@@ -55,20 +57,40 @@
     "title": "Common Questions",
     "items": [
       {
-        "question": "Is there a cover charge or entry fee?",
-        "answer": "Entry is free for audience members. Come support local musicians!"
+        "question": "Do I need to sign up online?",
+        "answer": "No. Performer sign-up happens in person only and is first come, first served. There is no online registration."
       },
       {
-        "question": "What if I don't have my own instrument?",
-        "answer": "We provide acoustic guitar, electric guitar, a drum kit, cajón, microphones, and all necessary cables and equipment. Just show up and sign up!"
+        "question": "What kind of performers are welcome?",
+        "answer": "Rhythm & Brews is all about live music. We welcome musicians of all styles and experience levels — from first-timers to seasoned performers."
       },
       {
-        "question": "Can I bring my full band?",
-        "answer": "Absolutely! Solo acts, duos, and full bands are all welcome. Just keep in mind the 15-minute time limit."
+        "question": "Is this event beginner-friendly?",
+        "answer": "Absolutely. This is a supportive, community-focused night. If it's your first time performing, you'll feel right at home."
       },
       {
-        "question": "What if all the slots fill up before I arrive?",
-        "answer": "Slots are first come, first served. We recommend arriving by 5:30pm when sign-up opens to secure your spot."
+        "question": "How long can I perform?",
+        "answer": "Each performer has up to 15 minutes. This helps make sure everyone gets a chance to play and keeps the night moving smoothly."
+      },
+      {
+        "question": "Do performers need to bring their own instruments?",
+        "answer": "You're welcome to bring your own, but we also provide a basic backline, including microphones, PA, an Orange amp, electric and acoustic guitars, a small drum kit, cajón drum, and direct boxes."
+      },
+      {
+        "question": "Is there a sound system provided?",
+        "answer": "Yes — a basic sound system is provided."
+      },
+      {
+        "question": "Can I perform more than once?",
+        "answer": "Sometimes. If there are open slots at the end of the night, performers may be invited back up, and we occasionally turn it into a fun group jam session."
+      },
+      {
+        "question": "Are bands allowed?",
+        "answer": "Yes, as long as setup is quick and space allows. Full drum kits are not permitted, but bands are welcome to use the provided kit."
+      },
+      {
+        "question": "Is this event family-friendly?",
+        "answer": "Yes. Rhythm & Brews is a family-friendly community event. We ask everyone to be respectful so the night stays fun and welcoming for all."
       }
     ]
   },

@@ -17,7 +17,7 @@ export default function FAQSection() {
         <h2 className="heading-lg text-center mb-12">{t('title')}</h2>
         
         <div className="space-y-4">
-          {[0, 1, 2, 3].map((index) => (
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
             <div 
               key={index}
               className="bg-background-light rounded-lg border-2 border-background-light hover:border-primary/30 transition-colors"

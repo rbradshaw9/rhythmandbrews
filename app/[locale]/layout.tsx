@@ -12,24 +12,48 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const { locale } = params
   
   const titles = {
-    en: 'Rhythm & Brews | Open Mic Night',
-    es: 'Rhythm & Brews | Noche de Micrófono Abierto'
+    en: 'Rhythm & Brews | Open Mic Night in Aguadilla, Puerto Rico',
+    es: 'Rhythm & Brews | Noche de Micrófono Abierto en Aguadilla, Puerto Rico'
   }
   
   const descriptions = {
-    en: 'Join us for an unforgettable evening of live music, great coffee, and intimate performances at Rhythm & Brews open mic night.',
-    es: 'Únete a nosotros para una noche inolvidable de música en vivo, café excelente y presentaciones íntimas en la noche de micrófono abierto de Rhythm & Brews.'
+    en: 'Join us for live music at Rhythm & Brews open mic night in Aguadilla, PR. A fun, community-focused event for musicians and music lovers. Free entry, all styles welcome.',
+    es: 'Únete a nosotros para música en vivo en la noche de open mic de Rhythm & Brews en Aguadilla, PR. Un evento comunitario divertido para músicos y amantes de la música. Entrada gratis, todos los estilos son bienvenidos.'
   }
+
+  const siteUrl = 'https://rhythmandbrews.vercel.app'
+  const ogImageUrl = `${siteUrl}/images/hero/openmic-background-1.jpg`
   
   return {
     title: titles[locale as keyof typeof titles] || titles.en,
     description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
-    keywords: ['open mic', 'live music', 'coffee', 'performances', 'acoustic', 'rhythm and brews', 'aguadilla', 'puerto rico'],
+    keywords: ['open mic', 'live music', 'musicians', 'acoustic', 'electric', 'rhythm and brews', 'aguadilla', 'puerto rico', 'community event', 'the beer box'],
+    authors: [{ name: 'Rhythm & Brews' }],
     openGraph: {
       title: titles[locale as keyof typeof titles] || titles.en,
       description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
       type: 'website',
       locale: locale === 'es' ? 'es_ES' : 'en_US',
+      url: `${siteUrl}/${locale}`,
+      siteName: 'Rhythm & Brews',
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: 'Rhythm & Brews Open Mic Night',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: titles[locale as keyof typeof titles] || titles.en,
+      description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
+      images: [ogImageUrl],
+    },
+    robots: {
+      index: true,
+      follow: true,
     },
   }
 }

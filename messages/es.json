@@ -5,7 +5,9 @@
     "meta": "Solo música en vivo • Músicos bienvenidos • Evento familiar • Aguadilla, Puerto Rico",
     "nextEventLabel": "Próximo Evento",
     "nextEventDate": "Sábado, 21 de febrero",
-    "eventDetails": "Puertas abren a las 6:00pm • Registro de músicos a las 5:30pm"
+    "eventDetails": "Puertas abren a las 6:00pm • Registro de músicos a las 5:30pm",
+    "noEventScheduled": "Próximo evento muy pronto",
+    "followForUpdates": "Síguenos en Instagram para las últimas novedades"
   },
   "intro": {
     "paragraph1": "Rhythm & Brews es un open mic impulsado por la comunidad y dedicado exclusivamente a presentaciones musicales en vivo — cantantes, instrumentistas, bandas y actos solistas son bienvenidos.",
@@ -54,20 +56,40 @@
     "title": "Preguntas Frecuentes",
     "items": [
       {
-        "question": "¿Hay costo de entrada?",
-        "answer": "La entrada es gratis para el público. ¡Ven a apoyar a los músicos locales!"
+        "question": "¿Necesito registrarme en línea?",
+        "answer": "No. El registro de músicos se hace en persona solamente y es por orden de llegada. No hay registro en línea."
       },
       {
-        "question": "¿Y si no tengo mi propio instrumento?",
-        "answer": "Tenemos guitarra acústica, guitarra eléctrica, batería, cajón, micrófonos y todo el equipo necesario. ¡Solo tienes que llegar y registrarte!"
+        "question": "¿Qué tipo de artistas son bienvenidos?",
+        "answer": "Rhythm & Brews es todo sobre música en vivo. Damos la bienvenida a músicos de todos los estilos y niveles de experiencia — desde principiantes hasta veteranos."
       },
       {
-        "question": "¿Puedo traer mi banda completa?",
-        "answer": "¡Por supuesto! Actos solistas, dúos y bandas completas son bienvenidos. Solo recuerda el límite de 15 minutos."
+        "question": "¿Es este evento amigable para principiantes?",
+        "answer": "Absolutamente. Esta es una noche de apoyo comunitario. Si es tu primera vez tocando en público, te sentirás como en casa."
       },
       {
-        "question": "¿Qué pasa si se llenan todos los espacios antes de que llegue?",
-        "answer": "Los espacios son por orden de llegada. Recomendamos llegar a las 5:30pm cuando abre el registro para asegurar tu espacio."
+        "question": "¿Cuánto tiempo puedo tocar?",
+        "answer": "Cada músico tiene hasta 15 minutos. Esto ayuda a asegurar que todos tengan oportunidad de tocar y mantiene la noche fluida."
+      },
+      {
+        "question": "¿Necesito traer mi propio instrumento?",
+        "answer": "Puedes traer el tuyo si prefieres, pero también proveemos equipo básico, incluyendo micrófonos, PA, amplificador Orange, guitarras eléctricas y acústicas, batería pequeña, cajón y cajas directas."
+      },
+      {
+        "question": "¿Hay sistema de sonido?",
+        "answer": "Sí — se provee un sistema de sonido básico."
+      },
+      {
+        "question": "¿Puedo tocar más de una vez?",
+        "answer": "A veces. Si hay espacios disponibles al final de la noche, los músicos pueden ser invitados a subir nuevamente, y ocasionalmente lo convertimos en una jam session grupal divertida."
+      },
+      {
+        "question": "¿Se permiten bandas?",
+        "answer": "Sí, siempre que el montaje sea rápido y el espacio lo permita. No se permiten baterías completas personales, pero las bandas pueden usar la batería provista."
+      },
+      {
+        "question": "¿Es este evento familiar?",
+        "answer": "Sí. Rhythm & Brews es un evento comunitario familiar. Pedimos a todos que sean respetuosos para que la noche sea divertida y acogedora para todos."
       }
     ]
   },

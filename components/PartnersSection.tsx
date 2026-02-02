@@ -14,7 +14,7 @@ export default function PartnersSection() {
   return (
     <section className="py-16 bg-background-light">
       <div className="section-container max-w-4xl text-center">
-        <h3 className="text-2xl font-serif font-bold text-text mb-12">{t('title')}</h3>
+        <h2 className="heading-lg text-center mb-12">{t('title')}</h2>
         
         <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16">
           {partners.map((partner, index) => (
@@ -22,7 +22,7 @@ export default function PartnersSection() {
               <div className="relative w-48 h-24">
                 <Image
                   src={partner.logo}
-                  alt={partner.name}
+                  alt={`${partner.name} logo`}
                   fill
                   className="object-contain"
                 />

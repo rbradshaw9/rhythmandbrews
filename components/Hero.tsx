@@ -1,11 +1,16 @@
 'use client'
 
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import LanguageToggle from './LanguageToggle'
+import { eventConfig, getEventDate, getEventDetails } from '@/config/event'
 
 export default function Hero() {
   const t = useTranslations('hero')
+  const locale = useLocale()
+  
+  const eventDate = getEventDate(locale)
+  const eventDetails = getEventDetails(locale)
   
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
@@ -14,7 +19,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background z-10" />
         <Image
           src="/images/hero/openmic-background-1.jpg"
-          alt="Rhythm & Brews Open Mic"
+          alt="Musicians performing at Rhythm & Brews open mic night in Aguadilla"
           fill
           className="object-cover"
           priority
@@ -39,17 +44,28 @@ export default function Hero() {
         </p>
         
         {/* Next Event Info */}
-        <div className="inline-block bg-background-light/80 backdrop-blur-sm border-2 border-primary/30 rounded-lg px-8 py-6 mb-10">
-          <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">
-            {t('nextEventLabel')}
-          </p>
-          <p className="text-2xl font-serif font-bold text-text mb-2">
-            {t('nextEventDate')}
-          </p>
-          <p className="text-text-muted">
-            {t('eventDetails')}
-          </p>
-        </div>
+        {eventDate ? (
+          <div className="inline-block bg-background-light/80 backdrop-blur-sm border-2 border-primary/30 rounded-lg px-8 py-6 mb-10">
+            <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">
+              {t('nextEventLabel')}
+            </p>
+            <p className="text-2xl font-serif font-bold text-text mb-2">
+              {eventDate}
+            </p>
+            <p className="text-text-muted">
+              {eventDetails}
+            </p>
+          </div>
+        ) : (
+          <div className="inline-block bg-background-light/80 backdrop-blur-sm border-2 border-accent/30 rounded-lg px-8 py-6 mb-10">
+            <p className="text-accent font-semibold text-xl mb-2">
+              {t('noEventScheduled')}
+            </p>
+            <p className="text-text-muted text-sm">
+              {t('followForUpdates')}
+            </p>
+          </div>
+        )}
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="#contact" className="btn-primary">

@@ -12,7 +12,7 @@ export default function FAQSection() {
   }
 
   return (
-    <section className="py-20 bg-background">
+    <section id="faq" className="py-20 bg-background">
       <div className="section-container max-w-4xl">
         <h2 className="heading-lg text-center mb-12">{t('title')}</h2>
         

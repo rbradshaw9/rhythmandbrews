@@ -13,7 +13,13 @@
     "paragraph1": "Rhythm & Brews es un open mic impulsado por la comunidad y dedicado exclusivamente a presentaciones musicales en vivo — cantantes, instrumentistas, bandas y actos solistas son bienvenidos.",
     "paragraph2": "Ya sea tu primera vez en tarima o tengas años de experiencia, este es un espacio para tocar, conectar y pasarla bien.",
     "paragraph3": "Ven a tocar, ven a escuchar o simplemente ven a apoyar a los músicos locales — la energía siempre es mejor con público.",
-    "paragraph4": "Por favor nota: Este evento es solo para presentaciones musicales. Poesía, comedia y palabra hablada no son parte de este formato de open mic."
+    "paragraph4": "Por favor nota: Este evento es solo para presentaciones musicales. Poesía, comedia y palabra hablada no son parte de este formato de open mic.",
+    "stat1Number": "100+",
+    "stat1Label": "Músicos",
+    "stat2Number": "10+",
+    "stat2Label": "Eventos",
+    "stat3Number": "100%",
+    "stat3Label": "Buena Onda"
   },
   "signup": {
     "title": "Registro de Músicos",
@@ -51,7 +57,13 @@
     "title": "Cuándo y Dónde",
     "paragraph1": "Rhythm & Brews se celebra en The Beer Box en Aguadilla, con buenas bebidas y un ambiente acogedor.",
     "paragraph2": "Los eventos se realizan ocasionalmente, por lo que las fechas pueden cambiar. Síguenos en Instagram para actualizaciones.",
-    "mapLinkText": "Ver direcciones en Google Maps"
+    "mapLinkText": "Ver direcciones en Google Maps",
+    "venueTitle": "Detalles del Lugar",
+    "address": "The Beer Box, Aguadilla, Puerto Rico",
+    "parkingTitle": "Estacionamiento",
+    "parkingInfo": "Hay estacionamiento disponible en la calle. Llega temprano para conseguir los mejores espacios.",
+    "accessibilityTitle": "Accesibilidad",
+    "accessibilityInfo": "El lugar es accesible. Por favor contáctanos si tienes necesidades específicas de accesibilidad."
   },  "faq": {
     "title": "Preguntas Frecuentes",
     "items": [

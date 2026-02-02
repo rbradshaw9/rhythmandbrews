@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import LanguageToggle from './LanguageToggle'
+import AddToCalendar from './AddToCalendar'
 import { eventConfig, getEventDate, getEventDetails } from '@/config/event'
 
 export default function Hero() {
@@ -77,6 +78,10 @@ export default function Hero() {
             </p>
           </div>
         )}
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+          {eventDate && <AddToCalendar locale={locale} />}
+        </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="#contact" className="btn-primary">

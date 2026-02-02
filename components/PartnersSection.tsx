@@ -25,6 +25,7 @@ export default function PartnersSection() {
                   alt={`${partner.name} logo`}
                   fill
                   className="object-contain"
+                  loading="lazy"
                 />
               </div>
             </div>

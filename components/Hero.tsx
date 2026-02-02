@@ -18,11 +18,22 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background z-10" />
         <Image
-          src="/images/hero/openmic-background-1.jpg"
+          src="/images/hero/open-mic-bg.png"
           alt="Musicians performing at Rhythm & Brews open mic night in Aguadilla"
           fill
           className="object-cover"
           priority
+        />
+      </div>
+
+      {/* Logo */}
+      <div className="absolute top-6 left-6 z-30">
+        <Image
+          src="/images/brand/rhythm-and-brews-logo.svg"
+          alt="Rhythm & Brews logo"
+          width={180}
+          height={60}
+          className="object-contain"
         />
       </div>
 

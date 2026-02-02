@@ -107,9 +107,9 @@ export default function ContactForm() {
     <section id="contact" className="py-20 bg-background">
       <div className="section-container max-w-2xl">
         <div className="text-center mb-12">
-          <h2 className="heading-lg mb-4">{t('heading')}</h2>
+          <h2 className="heading-lg mb-4">{t('title')}</h2>
           <p className="text-lg text-text-muted">
-            {t('subheading')}
+            {t('paragraph')}
           </p>
         </div>
 

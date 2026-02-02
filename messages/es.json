@@ -1,16 +1,17 @@
 {
   "hero": {
     "title": "Rhythm & Brews",
-    "subtitle": "Un open mic comunitario divertido, emocionante y de alta calidad — enfocado en música en vivo.",
-    "meta": "Música en vivo • Comunidad • Evento familiar • Aguadilla, Puerto Rico",
+    "subtitle": "Un open mic comunitario divertido, emocionante y de alta calidad — exclusivamente para presentaciones musicales en vivo.",
+    "meta": "Solo música en vivo • Músicos bienvenidos • Evento familiar • Aguadilla, Puerto Rico",
     "nextEventLabel": "Próximo Evento",
     "nextEventDate": "Sábado, 21 de febrero",
     "eventDetails": "Puertas abren a las 6:00pm • Registro de músicos a las 5:30pm"
   },
   "intro": {
-    "paragraph1": "Rhythm & Brews es un open mic impulsado por la comunidad y enfocado completamente en la música en vivo.",
+    "paragraph1": "Rhythm & Brews es un open mic impulsado por la comunidad y dedicado exclusivamente a presentaciones musicales en vivo — cantantes, instrumentistas, bandas y actos solistas son bienvenidos.",
     "paragraph2": "Ya sea tu primera vez en tarima o tengas años de experiencia, este es un espacio para tocar, conectar y pasarla bien.",
-    "paragraph3": "Ven a tocar, ven a escuchar o simplemente ven a apoyar a los músicos locales — la energía siempre es mejor con público."
+    "paragraph3": "Ven a tocar, ven a escuchar o simplemente ven a apoyar a los músicos locales — la energía siempre es mejor con público.",
+    "paragraph4": "Por favor nota: Este evento es solo para presentaciones musicales. Poesía, comedia y palabra hablada no son parte de este formato de open mic."
   },
   "signup": {
     "title": "Registro de Músicos",
@@ -18,11 +19,14 @@
     "paragraph2": "Los espacios son limitados, así que llega temprano si deseas tocar.",
     "details": [
       "Registro abre a las 5:30pm",
-      "Máximo de 15 minutos por músico",
+      "Máximo de 15 minutos por músico (típicamente 3-4 canciones)",
       "Se aceptan covers y canciones originales",
-      "Bienvenidos músicos principiantes y experimentados"
+      "Bienvenidos actos solistas, dúos y bandas completas",
+      "Disponible para acústico y eléctrico",
+      "Sistema de sonido, micrófonos y equipo básico incluido"
     ],
-    "note": "Este es un evento familiar y comunitario. Esperamos un ambiente respetuoso, divertido y positivo para todos."
+    "note": "Este es un evento familiar y comunitario. Esperamos un ambiente respetuoso, divertido y positivo para todos.",
+    "musicOnly": "Solo presentaciones musicales — voces, instrumentos, bandas. No poesía, comedia ni palabra hablada."
   },
   "location": {
     "title": "Cuándo y Dónde",

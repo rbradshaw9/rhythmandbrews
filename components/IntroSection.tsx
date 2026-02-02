@@ -18,6 +18,11 @@ export default function IntroSection() {
           <p className="text-xl text-text leading-relaxed">
             {t('paragraph3')}
           </p>
+          <div className="pt-4">
+            <p className="text-lg text-primary font-semibold italic">
+              {t('paragraph4')}
+            </p>
+          </div>
         </div>
       </div>
     </section>

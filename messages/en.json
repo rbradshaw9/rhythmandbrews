@@ -1,16 +1,17 @@
 {
   "hero": {
     "title": "Rhythm & Brews",
-    "subtitle": "A fun, exciting, high-quality community open mic night — all about live music.",
-    "meta": "Live music • Community • All ages welcome • Aguadilla, Puerto Rico",
+    "subtitle": "A fun, exciting, high-quality community open mic night — exclusively for live music performances.",
+    "meta": "Live music only • Musicians welcome • All ages • Aguadilla, Puerto Rico",
     "nextEventLabel": "Next Event",
     "nextEventDate": "Saturday, February 21",
     "eventDetails": "Doors at 6:00pm • Performer sign-up at 5:30pm"
   },
   "intro": {
-    "paragraph1": "Rhythm & Brews is a community-driven open mic night focused entirely on live music.",
+    "paragraph1": "Rhythm & Brews is a community-driven open mic night dedicated exclusively to live music performances — singers, instrumentalists, bands, and solo acts are all welcome.",
     "paragraph2": "Whether you're stepping on stage for the first time or you've been performing for years, this is a place to play, connect, and have a great time.",
-    "paragraph3": "Come to perform, come to listen, or just come to support local musicians — the energy is always better with a full room."
+    "paragraph3": "Come to perform, come to listen, or just come to support local musicians — the energy is always better with a full room.",
+    "paragraph4": "Please note: This event is for musical performances only. Poetry, comedy, and spoken word are not part of this open mic format."
   },
   "signup": {
     "title": "Performer Sign-Up",
@@ -18,11 +19,14 @@
     "paragraph2": "Slots are limited, so arrive early if you want to play.",
     "details": [
       "Sign-up opens at 5:30pm",
-      "15-minute max per performer",
+      "15-minute max per performer (typically 3-4 songs)",
       "Covers and originals welcome",
-      "Beginner-friendly and experienced musicians encouraged"
+      "Solo acts, duos, and full bands all welcome",
+      "Acoustic and electric setups available",
+      "PA system, mics, and basic backline provided"
     ],
-    "note": "This is a family-friendly community event. We're here to support each other, have fun, and create a positive space for live music."
+    "note": "This is a family-friendly community event. We're here to support each other, have fun, and create a positive space for live music.",
+    "musicOnly": "Musical performances only — vocals, instruments, bands. No poetry, comedy, or spoken word."
   },
   "location": {
     "title": "When & Where",

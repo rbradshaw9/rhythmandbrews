@@ -21,7 +21,7 @@ export default function SignUpSection() {
 
         <div className="bg-background rounded-lg p-8 mb-8">
           <ul className="space-y-4">
-            {[0, 1, 2, 3].map((index) => (
+            {[0, 1, 2, 3, 4, 5].map((index) => (
               <li key={index} className="flex items-start gap-3">
                 <svg className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -32,6 +32,12 @@ export default function SignUpSection() {
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="bg-accent/20 border-l-4 border-accent rounded-r-lg p-6 mb-6">
+          <p className="text-text font-semibold text-lg">
+            {t('musicOnly')}
+          </p>
         </div>
 
         <div className="bg-primary/10 border-l-4 border-primary rounded-r-lg p-6">

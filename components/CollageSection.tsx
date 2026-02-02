@@ -1,6 +1,11 @@
+'use client'
+
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 export default function CollageSection() {
+  const t = useTranslations('collageSection')
+  
   const collageImages = [
     { src: '/images/collages/photo-collage.png', alt: 'Rhythm & Brews community moments' },
     { src: '/images/collages/beer-box-collage.png', alt: 'Beer and brews selection' },
@@ -12,9 +17,9 @@ export default function CollageSection() {
     <section className="py-20 bg-background">
       <div className="section-container">
         <div className="text-center mb-16">
-          <h2 className="heading-lg mb-4">Moments from Our Nights</h2>
+          <h2 className="heading-lg mb-4">{t('heading')}</h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            A glimpse into the magic that happens when music and community come together.
+            {t('subheading')}
           </p>
         </div>
 

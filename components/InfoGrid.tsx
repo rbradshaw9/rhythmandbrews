@@ -1,23 +1,29 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
+
 export default function InfoGrid() {
+  const t = useTranslations('infoGrid')
+  
   const infoItems = [
     {
-      title: 'Every Thursday',
-      description: 'Join us weekly for an evening of incredible performances and community vibes.',
+      title: t('cards.schedule.title'),
+      description: t('cards.schedule.description'),
       icon: '/images/illustrations/livemusic.svg',
     },
     {
-      title: 'Open to All',
-      description: 'Whether you\'re a seasoned performer or trying the stage for the first time, everyone is welcome.',
+      title: t('cards.openToAll.title'),
+      description: t('cards.openToAll.description'),
       icon: '/images/illustrations/community.svg',
     },
     {
-      title: 'Cozy Atmosphere',
-      description: 'Intimate venue with warm lighting, comfortable seating, and exceptional acoustics.',
+      title: t('cards.atmosphere.title'),
+      description: t('cards.atmosphere.description'),
       icon: '/images/backgrounds/guitar-illustration.png',
     },
     {
-      title: 'Coffee & Refreshments',
-      description: 'Enjoy artisan coffee, craft beverages, and light bites throughout the evening.',
+      title: t('cards.refreshments.title'),
+      description: t('cards.refreshments.description'),
       icon: '/images/illustrations/foodandbeer.svg',
     },
   ]
@@ -26,9 +32,9 @@ export default function InfoGrid() {
     <section id="info" className="py-20 bg-background-light">
       <div className="section-container">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="heading-lg mb-4">What to Expect</h2>
+          <h2 className="heading-lg mb-4">{t('heading')}</h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Rhythm & Brews is more than just an open mic—it&apos;s a gathering of artists, music lovers, and friends.
+            {t('subheading')}
           </p>
         </div>
 

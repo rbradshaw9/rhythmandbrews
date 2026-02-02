@@ -1,19 +1,25 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
+
 export default function InstagramGallery() {
+  const t = useTranslations('instagramGallery')
+  
   // Placeholder for Instagram posts
   // In production, you could integrate with Instagram API or manually curate posts
   const instagramPosts = Array.from({ length: 6 }, (_, i) => ({
     id: i + 1,
     image: `/images/instagram/post-${i + 1}.jpg`,
-    caption: 'Follow us @rhythmandbrews',
+    caption: 'Follow us @rhythmandbrewsaguadilla',
   }))
 
   return (
     <section className="py-20 bg-background-light">
       <div className="section-container">
         <div className="text-center mb-12">
-          <h2 className="heading-lg mb-4">Follow the Journey</h2>
+          <h2 className="heading-lg mb-4">{t('heading')}</h2>
           <p className="text-lg text-text-muted mb-6">
-            Stay connected and see highlights from our weekly open mic nights.
+            {t('subheading')}
           </p>
           <a
             href="https://www.instagram.com/rhythmandbrewsaguadilla"

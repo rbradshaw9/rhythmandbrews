@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "title": "Rhythm & Brews",
+    "subtitle": "Where Music Meets Community",
+    "description": "Join us every week for an intimate evening of live performances, great coffee, and unforgettable moments.",
+    "ctaPrimary": "Get in Touch",
+    "ctaSecondary": "Learn More"
+  },
+  "infoGrid": {
+    "heading": "What to Expect",
+    "subheading": "Rhythm & Brews is more than just an open mic—it's a gathering of artists, music lovers, and friends.",
+    "cards": {
+      "schedule": {
+        "title": "Every Thursday",
+        "description": "Join us weekly for an evening of incredible performances and community vibes."
+      },
+      "openToAll": {
+        "title": "Open to All",
+        "description": "Whether you're a seasoned performer or trying the stage for the first time, everyone is welcome."
+      },
+      "atmosphere": {
+        "title": "Cozy Atmosphere",
+        "description": "Intimate venue with warm lighting, comfortable seating, and exceptional acoustics."
+      },
+      "refreshments": {
+        "title": "Coffee & Refreshments",
+        "description": "Enjoy artisan coffee, craft beverages, and light bites throughout the evening."
+      }
+    }
+  },
+  "collageSection": {
+    "heading": "Moments from Our Nights",
+    "subheading": "A glimpse into the magic that happens when music and community come together."
+  },
+  "instagramGallery": {
+    "heading": "Follow the Journey",
+    "subheading": "Stay connected and see highlights from our weekly open mic nights."
+  },
+  "contactForm": {
+    "heading": "Get in Touch",
+    "subheading": "Have questions? Want to perform? We'd love to hear from you.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "nameRequired": "Name is required",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us what's on your mind...",
+    "messageRequired": "Message is required",
+    "messageMinLength": "Message must be at least 10 characters",
+    "submitButton": "Send Message",
+    "submitting": "Sending...",
+    "successTitle": "Thank you! Your message has been sent successfully.",
+    "successMessage": "We'll get back to you soon.",
+    "errorTitle": "Oops! Something went wrong.",
+    "errorMessage": "Please try again or email us directly at ryan@rhythmandbrewspr.com"
+  },
+  "footer": {
+    "tagline": "Where music meets community. Join us every Thursday for an unforgettable open mic experience.",
+    "quickLinks": "Quick Links",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "instagram": "Instagram",
+    "getInTouch": "Get in Touch",
+    "everyThursday": "Every Thursday",
+    "copyright": "Rhythm & Brews. All rights reserved."
+  }
+}

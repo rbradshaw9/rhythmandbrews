@@ -1,4 +1,9 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
+
 export default function Footer() {
+  const t = useTranslations('footer')
   const currentYear = new Date().getFullYear()
 
   return (
@@ -14,22 +19,22 @@ export default function Footer() {
               className="h-12 mb-3"
             />
             <p className="text-text-muted">
-              Where music meets community. Join us every Thursday for an unforgettable open mic experience.
+              {t('tagline')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-text mb-3">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-text mb-3">{t('quickLinks')}</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#info" className="text-text-muted hover:text-primary transition-colors">
-                  About Us
+                  {t('aboutUs')}
                 </a>
               </li>
               <li>
                 <a href="#contact" className="text-text-muted hover:text-primary transition-colors">
-                  Contact
+                  {t('contact')}
                 </a>
               </li>
               <li>
@@ -39,7 +44,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-text-muted hover:text-primary transition-colors"
                 >
-                  Instagram
+                  {t('instagram')}
                 </a>
               </li>
             </ul>
@@ -47,7 +52,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold text-text mb-3">Get in Touch</h4>
+            <h4 className="text-lg font-semibold text-text mb-3">{t('getInTouch')}</h4>
             <ul className="space-y-2 text-text-muted">
               <li className="flex items-start gap-2">
                 <svg className="w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,7 +66,7 @@ export default function Footer() {
                 <svg className="w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                <span>Every Thursday</span>
+                <span>{t('everyThursday')}</span>
               </li>
             </ul>
           </div>
@@ -93,7 +98,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="text-center text-text-muted text-sm pt-8 border-t border-primary/10">
-          <p>&copy; {currentYear} Rhythm & Brews. All rights reserved.</p>
+          <p>&copy; {currentYear} {t('copyright')}</p>
         </div>
       </div>
     </footer>

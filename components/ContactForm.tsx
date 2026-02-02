@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, FormEvent } from 'react'
+import { useTranslations, useLocale } from 'next-intl'
 
 interface FormData {
   name: string
@@ -15,6 +16,8 @@ interface FormErrors {
 }
 
 export default function ContactForm() {
+  const t = useTranslations('contactForm')
+  const locale = useLocale()
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -29,19 +32,19 @@ export default function ContactForm() {
     const newErrors: FormErrors = {}
 
     if (!formData.name.trim()) {
-      newErrors.name = 'Name is required'
+      newErrors.name = t('nameRequired')
     }
 
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required'
+      newErrors.email = t('emailRequired')
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Please enter a valid email address'
+      newErrors.email = t('emailInvalid')
     }
 
     if (!formData.message.trim()) {
-      newErrors.message = 'Message is required'
+      newErrors.message = t('messageRequired')
     } else if (formData.message.trim().length < 10) {
-      newErrors.message = 'Message must be at least 10 characters'
+      newErrors.message = t('messageMinLength')
     }
 
     setErrors(newErrors)
@@ -62,7 +65,7 @@ export default function ContactForm() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch(`/${locale}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -104,9 +107,9 @@ export default function ContactForm() {
     <section id="contact" className="py-20 bg-background">
       <div className="section-container max-w-2xl">
         <div className="text-center mb-12">
-          <h2 className="heading-lg mb-4">Get in Touch</h2>
+          <h2 className="heading-lg mb-4">{t('heading')}</h2>
           <p className="text-lg text-text-muted">
-            Have questions? Want to perform? We&apos;d love to hear from you.
+            {t('subheading')}
           </p>
         </div>
 
@@ -114,7 +117,7 @@ export default function ContactForm() {
           {/* Name Field */}
           <div>
             <label htmlFor="name" className="block text-text font-semibold mb-2">
-              Name *
+              {t('nameLabel')} *
             </label>
             <input
               type="text"
@@ -125,7 +128,7 @@ export default function ContactForm() {
               className={`w-full px-4 py-3 bg-background-light text-text rounded-lg border-2 ${
                 errors.name ? 'border-red-500' : 'border-transparent'
               } focus:border-primary focus:outline-none transition-colors`}
-              placeholder="Your name"
+              placeholder={t('namePlaceholder')}
             />
             {errors.name && (
               <p className="mt-1 text-sm text-red-500">{errors.name}</p>
@@ -135,7 +138,7 @@ export default function ContactForm() {
           {/* Email Field */}
           <div>
             <label htmlFor="email" className="block text-text font-semibold mb-2">
-              Email *
+              {t('emailLabel')} *
             </label>
             <input
               type="email"
@@ -146,7 +149,7 @@ export default function ContactForm() {
               className={`w-full px-4 py-3 bg-background-light text-text rounded-lg border-2 ${
                 errors.email ? 'border-red-500' : 'border-transparent'
               } focus:border-primary focus:outline-none transition-colors`}
-              placeholder="your@email.com"
+              placeholder={t('emailPlaceholder')}
             />
             {errors.email && (
               <p className="mt-1 text-sm text-red-500">{errors.email}</p>
@@ -156,7 +159,7 @@ export default function ContactForm() {
           {/* Message Field */}
           <div>
             <label htmlFor="message" className="block text-text font-semibold mb-2">
-              Message *
+              {t('messageLabel')} *
             </label>
             <textarea
               id="message"
@@ -167,7 +170,7 @@ export default function ContactForm() {
               className={`w-full px-4 py-3 bg-background-light text-text rounded-lg border-2 ${
                 errors.message ? 'border-red-500' : 'border-transparent'
               } focus:border-primary focus:outline-none transition-colors resize-none`}
-              placeholder="Tell us what's on your mind..."
+              placeholder={t('messagePlaceholder')}
             />
             {errors.message && (
               <p className="mt-1 text-sm text-red-500">{errors.message}</p>
@@ -180,17 +183,17 @@ export default function ContactForm() {
             disabled={isSubmitting}
             className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {isSubmitting ? 'Sending...' : 'Send Message'}
+            {isSubmitting ? t('submitting') : t('submitButton')}
           </button>
 
           {/* Success Message */}
           {submitStatus === 'success' && (
             <div className="p-4 bg-green-900/30 border-2 border-green-500 rounded-lg text-center">
               <p className="text-green-400 font-semibold">
-                ✓ Thank you! Your message has been sent successfully.
+                ✓ {t('successTitle')}
               </p>
               <p className="text-green-300 text-sm mt-1">
-                We&apos;ll get back to you soon.
+                {t('successMessage')}
               </p>
             </div>
           )}
@@ -199,10 +202,10 @@ export default function ContactForm() {
           {submitStatus === 'error' && (
             <div className="p-4 bg-red-900/30 border-2 border-red-500 rounded-lg text-center">
               <p className="text-red-400 font-semibold">
-                ✗ Oops! Something went wrong.
+                ✗ {t('errorTitle')}
               </p>
               <p className="text-red-300 text-sm mt-1">
-                Please try again or email us directly at ryan@rhythmandbrewspr.com
+                {t('errorMessage')}
               </p>
             </div>
           )}

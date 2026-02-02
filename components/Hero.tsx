@@ -1,6 +1,12 @@
+'use client'
+
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
+import LanguageToggle from './LanguageToggle'
 
 export default function Hero() {
+  const t = useTranslations('hero')
+  
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -15,23 +21,28 @@ export default function Hero() {
         />
       </div>
 
+      {/* Language Toggle */}
+      <div className="absolute top-6 right-6 z-30">
+        <LanguageToggle />
+      </div>
+
       {/* Hero Content */}
       <div className="relative z-20 section-container text-center animate-fade-in">
         <h1 className="heading-xl mb-6 tracking-tight">
-          Rhythm & Brews
+          {t('title')}
         </h1>
         <p className="text-xl sm:text-2xl text-text-muted mb-4 max-w-2xl mx-auto">
-          Where Music Meets Community
+          {t('subtitle')}
         </p>
         <p className="text-lg text-text-muted mb-10 max-w-xl mx-auto">
-          Join us every week for an intimate evening of live performances, great coffee, and unforgettable moments.
+          {t('description')}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="#contact" className="btn-primary">
-            Get in Touch
+            {t('ctaPrimary')}
           </a>
           <a href="#info" className="btn-secondary">
-            Learn More
+            {t('ctaSecondary')}
           </a>
         </div>
       </div>

@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
     // Send email using Resend
     const { data, error } = await resend.emails.send({
       from: 'Rhythm & Brews <onboarding@resend.dev>',
-      to: ['delivered@resend.dev'], // Use your verified email once domain is set up
+      to: ['ryan@rhythmandbrewspr.com'],
       replyTo: email, // Sender's email for reply
       subject: `New Contact Form Message from ${name}`,
       html: `

@@ -61,9 +61,12 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email using Resend
+    // Using delivered@resend.dev for testing until ryan@rhythmandbrewspr.com is verified in Resend dashboard
+    const recipientEmail = process.env.VERIFIED_EMAIL || 'delivered@resend.dev'
+    
     const { data, error } = await resend.emails.send({
       from: 'Rhythm & Brews <onboarding@resend.dev>',
-      to: ['ryan@rhythmandbrewspr.com'],
+      to: [recipientEmail],
       replyTo: email, // Sender's email for reply
       subject: `New Contact Form Message from ${name}`,
       html: `
@@ -143,9 +146,12 @@ export async function POST(request: NextRequest) {
     })
 
     if (error) {
-      console.error('Resend error:', error)
+      console.error('Resend error:', JSON.stringify(error, null, 2))
       return NextResponse.json(
-        { error: 'Failed to send email. Please try again later.' },
+        { 
+          error: 'Failed to send email. Please try again later.',
+          details: process.env.NODE_ENV === 'development' ? error.message : undefined
+        },
         { status: 500 }
       )
     }

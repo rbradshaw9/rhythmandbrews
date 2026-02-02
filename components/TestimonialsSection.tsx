@@ -25,7 +25,7 @@ export default function TestimonialsSection() {
               </svg>
               
               <p className="text-text leading-relaxed mb-6 italic">
-                "{t(`items.${index}.quote`)}"
+                &ldquo;{t(`items.${index}.quote`)}&rdquo;
               </p>
               
               <div className="flex items-center gap-3">

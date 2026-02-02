@@ -34,10 +34,42 @@ export default function SignUpSection() {
           </ul>
         </div>
 
-        <div className="bg-accent/20 border-l-4 border-accent rounded-r-lg p-6 mb-6">
+        <div className="bg-accent/20 border-l-4 border-accent rounded-r-lg p-6 mb-8">
           <p className="text-text font-semibold text-lg">
             {t('musicOnly')}
           </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="bg-background rounded-lg p-6">
+            <h3 className="text-xl font-bold text-primary mb-3">
+              {t('equipmentTitle')}
+            </h3>
+            <p className="text-text mb-4">{t('equipmentDescription')}</p>
+            <ul className="space-y-2">
+              {[0, 1, 2, 3, 4].map((index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-text">{t(`equipment.${index}`)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="bg-background rounded-lg p-6">
+            <h3 className="text-xl font-bold text-primary mb-3">
+              {t('bringTitle')}
+            </h3>
+            <p className="text-text mb-4">{t('bringDescription')}</p>
+            <ul className="space-y-2">
+              {[0, 1, 2, 3].map((index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-text">{t(`bringItems.${index}`)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div className="bg-primary/10 border-l-4 border-primary rounded-r-lg p-6">

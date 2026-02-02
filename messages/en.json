@@ -22,17 +22,72 @@
       "15-minute max per performer (typically 3-4 songs)",
       "Covers and originals welcome",
       "Solo acts, duos, and full bands all welcome",
-      "Acoustic and electric setups available",
-      "PA system, mics, and basic backline provided"
+      "All genres welcome: rock, folk, jazz, Latin, R&B, and more",
+      "Acoustic and electric setups available"
     ],
     "note": "This is a family-friendly community event. We're here to support each other, have fun, and create a positive space for live music.",
-    "musicOnly": "Musical performances only — vocals, instruments, bands. No poetry, comedy, or spoken word."
+    "musicOnly": "Musical performances only — vocals, instruments, bands. No poetry, comedy, or spoken word.",
+    "equipmentTitle": "Equipment Provided",
+    "equipmentDescription": "We've got you covered with:",
+    "equipment": [
+      "PA system and microphones",
+      "Acoustic guitar",
+      "Electric guitar",
+      "Small drum kit and cajón",
+      "Cables and direct boxes"
+    ],
+    "bringTitle": "What to Bring",
+    "bringDescription": "Feel free to bring your own gear if you prefer:",
+    "bringItems": [
+      "Your own instrument (if you have a preference)",
+      "Guitar picks, drum sticks, or other accessories",
+      "Setlist or sheet music",
+      "Any special pedals or effects you want to use"
+    ]
   },
   "location": {
     "title": "When & Where",
     "paragraph1": "Rhythm & Brews is hosted at The Beer Box in Aguadilla, with great drinks and a welcoming atmosphere.",
     "paragraph2": "Events are held occasionally, so dates may change. Follow us on Instagram for the latest updates.",
     "mapLinkText": "Get directions on Google Maps"
+  },
+  "faq": {
+    "title": "Common Questions",
+    "items": [
+      {
+        "question": "Is there a cover charge or entry fee?",
+        "answer": "Entry is free for audience members. Come support local musicians!"
+      },
+      {
+        "question": "What if I don't have my own instrument?",
+        "answer": "We provide acoustic guitar, electric guitar, a drum kit, cajón, microphones, and all necessary cables and equipment. Just show up and sign up!"
+      },
+      {
+        "question": "Can I bring my full band?",
+        "answer": "Absolutely! Solo acts, duos, and full bands are all welcome. Just keep in mind the 15-minute time limit."
+      },
+      {
+        "question": "What if all the slots fill up before I arrive?",
+        "answer": "Slots are first come, first served. We recommend arriving by 5:30pm when sign-up opens to secure your spot."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Performers Are Saying",
+    "items": [
+      {
+        "quote": "The energy at Rhythm & Brews is amazing. Everyone's so supportive, whether you're playing your first gig or your hundredth.",
+        "author": "Local Musician"
+      },
+      {
+        "quote": "Great sound system, friendly crowd, and a perfect spot to try out new material. This is what open mics should be.",
+        "author": "Aguadilla Artist"
+      },
+      {
+        "quote": "I was nervous about my first open mic, but the vibe here is incredible. Can't wait for the next one!",
+        "author": "First-Time Performer"
+      }
+    ]
   },
   "partners": {
     "title": "Hosted With",

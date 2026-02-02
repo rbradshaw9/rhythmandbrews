@@ -22,19 +22,72 @@
       "Máximo de 15 minutos por músico (típicamente 3-4 canciones)",
       "Se aceptan covers y canciones originales",
       "Bienvenidos actos solistas, dúos y bandas completas",
-      "Disponible para acústico y eléctrico",
-      "Sistema de sonido, micrófonos y equipo básico incluido"
+      "Todos los géneros bienvenidos: rock, folk, jazz, latino, R&B y más",
+      "Disponible para acústico y eléctrico"
     ],
     "note": "Este es un evento familiar y comunitario. Esperamos un ambiente respetuoso, divertido y positivo para todos.",
-    "musicOnly": "Solo presentaciones musicales — voces, instrumentos, bandas. No poesía, comedia ni palabra hablada."
+    "musicOnly": "Solo presentaciones musicales — voces, instrumentos, bandas. No poesía, comedia ni palabra hablada.",
+    "equipmentTitle": "Equipo Incluido",
+    "equipmentDescription": "Tenemos todo lo que necesitas:",
+    "equipment": [
+      "Sistema de sonido y micrófonos",
+      "Guitarra acústica",
+      "Guitarra eléctrica",
+      "Batería pequeña y cajón",
+      "Cables y cajas directas"
+    ],
+    "bringTitle": "Qué Traer",
+    "bringDescription": "Puedes traer tu propio equipo si prefieres:",
+    "bringItems": [
+      "Tu propio instrumento (si tienes preferencia)",
+      "Púas, palillos o accesorios que necesites",
+      "Lista de canciones o partituras",
+      "Pedales o efectos especiales que quieras usar"
+    ]
   },
   "location": {
     "title": "Cuándo y Dónde",
     "paragraph1": "Rhythm & Brews se celebra en The Beer Box en Aguadilla, con buenas bebidas y un ambiente acogedor.",
     "paragraph2": "Los eventos se realizan ocasionalmente, por lo que las fechas pueden cambiar. Síguenos en Instagram para actualizaciones.",
     "mapLinkText": "Ver direcciones en Google Maps"
+  },  "faq": {
+    "title": "Preguntas Frecuentes",
+    "items": [
+      {
+        "question": "¿Hay costo de entrada?",
+        "answer": "La entrada es gratis para el público. ¡Ven a apoyar a los músicos locales!"
+      },
+      {
+        "question": "¿Y si no tengo mi propio instrumento?",
+        "answer": "Tenemos guitarra acústica, guitarra eléctrica, batería, cajón, micrófonos y todo el equipo necesario. ¡Solo tienes que llegar y registrarte!"
+      },
+      {
+        "question": "¿Puedo traer mi banda completa?",
+        "answer": "¡Por supuesto! Actos solistas, dúos y bandas completas son bienvenidos. Solo recuerda el límite de 15 minutos."
+      },
+      {
+        "question": "¿Qué pasa si se llenan todos los espacios antes de que llegue?",
+        "answer": "Los espacios son por orden de llegada. Recomendamos llegar a las 5:30pm cuando abre el registro para asegurar tu espacio."
+      }
+    ]
   },
-  "partners": {
+  "testimonials": {
+    "title": "Lo Que Dicen Los Músicos",
+    "items": [
+      {
+        "quote": "La energía en Rhythm & Brews es increíble. Todos se apoyan mutuamente, ya sea tu primera presentación o la número cien.",
+        "author": "Músico Local"
+      },
+      {
+        "quote": "Excelente sistema de sonido, público amigable y el lugar perfecto para probar material nuevo. Así deben ser los open mics.",
+        "author": "Artista de Aguadilla"
+      },
+      {
+        "quote": "Estaba nervioso por mi primer open mic, pero el ambiente aquí es increíble. ¡No puedo esperar por el próximo!",
+        "author": "Músico Debutante"
+      }
+    ]
+  },  "partners": {
     "title": "Colaboradores",
     "items": [
       "The Beer Box",

@@ -53,10 +53,10 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="#contact" className="btn-primary">
-            {t.rich('contact.title', { fallback: 'Get in Touch' })}
+            Get in Touch
           </a>
           <a href="#signup" className="btn-secondary">
-            {t.rich('signup.title', { fallback: 'Performer Sign-Up' })}
+            Performer Sign-Up
           </a>
         </div>
       </div>

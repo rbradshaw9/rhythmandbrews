@@ -16,7 +16,7 @@ interface FormErrors {
 }
 
 export default function ContactForm() {
-  const t = useTranslations('contactForm')
+  const t = useTranslations('contact')
   const locale = useLocale()
   const [formData, setFormData] = useState<FormData>({
     name: '',

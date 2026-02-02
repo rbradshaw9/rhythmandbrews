@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <circle cx="40" cy="40" r="25" stroke="#d4a574" stroke-width="3" fill="#1a1412"/>
+  <path d="M 40 20 L 40 60 M 20 40 L 60 40" stroke="#d4a574" stroke-width="3"/>
+  <text x="75" y="35" font-family="serif" font-size="18" font-weight="bold" fill="#d4a574">BOX LAB</text>
+  <text x="75" y="52" font-family="serif" font-size="16" fill="#d4a574">BREWING</text>
+</svg>

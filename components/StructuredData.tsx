@@ -2,9 +2,15 @@ import { eventConfig } from '@/config/event'
 
 interface StructuredDataProps {
   locale: string
+  translations: {
+    faqItems: Array<{
+      question: string
+      answer: string
+    }>
+  }
 }
 
-export default function StructuredData({ locale }: StructuredDataProps) {
+export default function StructuredData({ locale, translations }: StructuredDataProps) {
   if (!eventConfig.date) return null
 
   const eventDate = new Date(eventConfig.date)
@@ -14,7 +20,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
   const endTime = new Date(eventDate)
   endTime.setHours(22, 0, 0) // 10:00 PM
 
-  const structuredData = {
+  const musicEventData = {
     '@context': 'https://schema.org',
     '@type': 'MusicEvent',
     name: 'Rhythm & Brews Open Mic Night',
@@ -31,8 +37,10 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       name: 'The Beer Box',
       address: {
         '@type': 'PostalAddress',
+        streetAddress: 'KM 31.6 PR-110, Aguacate',
         addressLocality: 'Aguadilla',
         addressRegion: 'PR',
+        postalCode: '00603',
         addressCountry: 'US'
       }
     },
@@ -57,10 +65,63 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     inLanguage: [locale === 'es' ? 'es' : 'en', 'es', 'en']
   }
 
+  // FAQ Schema for rich snippets
+  const faqData = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: translations.faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer
+      }
+    }))
+  }
+
+  // LocalBusiness Schema for venue
+  const localBusinessData = {
+    '@context': 'https://schema.org',
+    '@type': 'MusicVenue',
+    name: 'The Beer Box',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'KM 31.6 PR-110, Aguacate',
+      addressLocality: 'Aguadilla',
+      addressRegion: 'PR',
+      postalCode: '00603',
+      addressCountry: 'US'
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 18.505987982584774,
+      longitude: -67.11274332480875
+    },
+    url: 'https://maps.app.goo.gl/Xt2RM624XNqsKYmw6',
+    priceRange: 'Free',
+    amenityFeature: [
+      {
+        '@type': 'LocationFeatureSpecification',
+        name: 'Parking',
+        value: true
+      }
+    ]
+  }
+
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(musicEventData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessData) }}
+      />
+    </>
   )
 }

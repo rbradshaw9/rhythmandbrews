@@ -7,8 +7,8 @@ export default function PartnersSection() {
   const t = useTranslations('partners')
   
   const partners = [
-    { name: t('items.0'), logo: '/images/brand/beer-box-logo.svg' },
-    { name: t('items.1'), logo: '/images/brand/box-lab-brewing-logo.svg' }
+    { name: t('items.0'), logo: '/images/brand/beerbox.jpg' },
+    { name: t('items.1'), logo: '/images/brand/boxlab-logo.webp' }
   ]
   
   return (

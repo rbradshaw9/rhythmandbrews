@@ -51,7 +51,7 @@ export default function LocationSection() {
 
             <div>
               <a
-                href="https://maps.google.com/?q=The+Beer+Box+Aguadilla"
+                href="https://maps.app.goo.gl/Xt2RM624XNqsKYmw6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 btn-primary"
@@ -68,7 +68,7 @@ export default function LocationSection() {
           {/* Right Column - Map */}
           <div className="h-[400px] md:h-full min-h-[400px] rounded-lg overflow-hidden shadow-xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.4!2d-67.1542!3d18.4277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c036f2c1a9b5555%3A0x1234567890abcdef!2sAguadilla%2C%20Puerto%20Rico!5e0!3m2!1sen!2sus!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.5067640801612!2d-67.11274332480875!3d18.505987982584774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c02963d49ccfa8b%3A0x9b1e61e27f29c02e!2sThe%20Beer%20Box!5e0!3m2!1sen!2spr!4v1770124903417!5m2!1sen!2spr"
               width="100%"
               height="100%"
               style={{ border: 0 }}

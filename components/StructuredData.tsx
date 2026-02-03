@@ -9,10 +9,10 @@ export default function StructuredData({ locale }: StructuredDataProps) {
 
   const eventDate = new Date(eventConfig.date)
   const startTime = new Date(eventDate)
-  startTime.setHours(18, 0, 0)
+  startTime.setHours(18, 0, 0) // 6:00 PM
   
   const endTime = new Date(eventDate)
-  endTime.setHours(22, 0, 0)
+  endTime.setHours(22, 0, 0) // 10:00 PM
 
   const structuredData = {
     '@context': 'https://schema.org',

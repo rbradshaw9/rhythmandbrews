@@ -14,7 +14,7 @@ export default function AddToCalendar({ locale }: AddToCalendarProps) {
 
   const eventDate = new Date(eventConfig.date)
   
-  // Event starts at 6pm, ends at 10pm (4 hour duration)
+  // Event: 6pm - 10pm (Sign-up starts at 5:30pm)
   const startTime = new Date(eventDate)
   startTime.setHours(18, 0, 0) // 6:00 PM
   

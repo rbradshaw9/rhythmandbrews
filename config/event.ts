@@ -1,14 +1,16 @@
 export interface EventConfig {
   date: string | null // null if no event scheduled
   doorsTime: string
+  endTime: string
   signupTime: string
 }
 
 export const eventConfig: EventConfig = {
   // Set to null when no event is scheduled
-  // Format: "Saturday, February 21" or "Sábado, 21 de febrero"
+  // Format: "February 21, 2026" or full date string
   date: "February 21, 2026",
   doorsTime: "6:00pm",
+  endTime: "10:00pm",
   signupTime: "5:30pm",
 }
 
@@ -36,15 +38,15 @@ export function getEventDate(locale: string): string | null {
 export function getEventDetails(locale: string): string {
   const t = {
     en: {
-      doors: "Doors at",
-      signup: "Performer sign-up at"
+      event: "Event",
+      signup: "Sign-up starts"
     },
     es: {
-      doors: "Puertas a las",
-      signup: "Registro de músicos a las"
+      event: "Evento",
+      signup: "Registro comienza"
     }
   }
   
   const text = locale === 'es' ? t.es : t.en
-  return `${text.doors} ${eventConfig.doorsTime} • ${text.signup} ${eventConfig.signupTime}`
+  return `${text.event}: ${eventConfig.doorsTime} - ${eventConfig.endTime} • ${text.signup}: ${eventConfig.signupTime}`
 }
